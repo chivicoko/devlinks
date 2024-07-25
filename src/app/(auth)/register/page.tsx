@@ -87,7 +87,7 @@ const Register: React.FC = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="e.g. alex@email.com"
             />
-            {emailError && <span className="text-xs text-red-500 ml-2 w-full flex justify-end">{emailError}</span>}
+            {emailError && <span className="text-xs text-red-500 ml-2 w-[190px] flex justify-end">{emailError}</span>}
           </div>
           <label htmlFor="password" className={`text-xs font-semibold ${passwordError ? 'text-red-500' : 'text-gray-500'}`}>Create password</label>
           <div className={`mb-6 p-3 flex items-center border rounded-lg ${passwordError ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
@@ -102,7 +102,7 @@ const Register: React.FC = () => {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="At least 8 characters"
             />
-            {passwordError && <span className="text-xs text-red-500 ml-2 w-full flex justify-end">{passwordError}</span>}
+            {passwordError && <span className="text-xs text-red-500 ml-2 w-[250px] flex justify-end">{passwordError}</span>}
           </div>
           <label htmlFor="confirm-password" className={`text-xs font-semibold ${confirmPasswordError ? 'text-red-500' : 'text-gray-500'}`}>Confirm password</label>
           <div className={`mb-6 p-3 flex items-center border rounded-lg ${confirmPasswordError ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
@@ -117,7 +117,7 @@ const Register: React.FC = () => {
               onChange={(e) => setConfirmPassword(e.target.value)}
               placeholder="At least 8 characters"
             />
-            {confirmPasswordError && <span className="text-xs text-red-500 ml-2 w-full flex justify-end">{confirmPasswordError}</span>}
+            {confirmPasswordError && <span className="text-xs text-red-500 ml-2 w-[250px] flex justify-end">{confirmPasswordError}</span>}
           </div>
           <p className='text-xs mb-6'>Password must contain at least 8 characters</p>
           <button

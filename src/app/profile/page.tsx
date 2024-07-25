@@ -85,7 +85,7 @@ const Links: React.FC = () => {
                         objectFit="contain" 
                       />
                     </button>
-                    <p className="text-[12px]">Image must be below 1024x1024px. <br /> Use PNG or JPG format.</p>
+                    <p className="text-[12px] text-start">Image must be below 1024x1024px. <br /> Use PNG or JPG format.</p>
                   </div>
                 </div>
                 <div className="bg-[#FAFAFA] rounded-lg flex justify-between items-center p-[20px] text-base text-center text-[#737373] relative">

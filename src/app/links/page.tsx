@@ -18,13 +18,13 @@ interface Link {
 }
 
 const platformOptions = [
-  { value: 'GitHub', label: 'GitHub', icon: <GitHubIcon /> },
-  { value: 'YouTube', label: 'YouTube', icon: <YouTubeIcon /> },
-  { value: 'Facebook', label: 'Facebook', icon: <FacebookIcon /> },
-  { value: 'Twitter', label: 'Twitter', icon: <XIcon /> },
-  { value: 'LinkedIn', label: 'LinkedIn', icon: <LinkedInIcon /> },
-  { value: 'Instagram', label: 'Instagram', icon: <InstagramIcon /> },
-  { value: 'Other', label: 'Other', icon: <MediationIcon /> },
+  { value: 'GitHub', label: 'GitHub', icon: <GitHubIcon />, color: '#ffffff' },
+  { value: 'YouTube', label: 'YouTube', icon: <YouTubeIcon />, color: '#ffffff' },
+  { value: 'Facebook', label: 'Facebook', icon: <FacebookIcon />, color: '#ffffff' },
+  { value: 'Twitter', label: 'Twitter', icon: <XIcon />, color: '#ffffff' },
+  { value: 'LinkedIn', label: 'LinkedIn', icon: <LinkedInIcon />, color: '#ffffff' },
+  { value: 'Instagram', label: 'Instagram', icon: <InstagramIcon />, color: '#ffffff' },
+  { value: 'Other', label: 'Other', icon: <MediationIcon />, color: '#ffffff' },
 ];
 
 const formatOptionLabel = ({ value, label, icon }: any) => (

@@ -60,7 +60,7 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="e.g. alex@example.com"
             />
-            {emailError && <span className="text-xs text-red-500 ml-2 w-full flex justify-end">{emailError}</span>}
+            {emailError && <span className="text-xs text-red-500 ml-2 w-[135px] flex justify-end">{emailError}</span>}
           </div>
           <label htmlFor="password" className={`text-xs font-semibold ${passwordError ? 'text-red-500' : 'text-gray-500'}`}>Password</label>
           <div className={`mb-6 p-3 flex items-center border rounded-lg ${passwordError ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
@@ -75,7 +75,7 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
             />
-            {passwordError && <span className="text-xs text-red-500 ml-2 w-full flex justify-end">{passwordError}</span>}
+            {passwordError && <span className="text-xs text-red-500 ml-2 w-[200px] flex justify-end">{passwordError}</span>}
           </div>
           <button
             className="w-full bg-[#633CFF] hover:bg-[#BEADFF] text-white font-bold py-3 px-4 rounded-lg focus:bg-[#BEADFF] focus:outline-none mb-6"

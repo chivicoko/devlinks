@@ -2,6 +2,7 @@
 import mongoose from "mongoose";
 
 // Define the connection type
+
 interface Connection {
   isConnected?: boolean;
 }

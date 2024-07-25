@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
 }, {timestamps: true});
 
 
-const linkSchema = new mongoose.Schema({
+const userLinkSchema = new mongoose.Schema({
     platform: {
       type: String,
       required: true,
@@ -39,4 +39,4 @@ const linkSchema = new mongoose.Schema({
   
 
 export const User = mongoose.models.User || mongoose.model('User', userSchema);
-export const Link = mongoose.models.Link || mongoose.model('Link', linkSchema);
+export const UserLink = mongoose.models.UserLink || mongoose.model('UserLink', userLinkSchema);

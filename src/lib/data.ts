@@ -1,26 +1,26 @@
-import { Link, User } from "./models";
+import { UserLink, User } from "./models";
 import { connectToDb } from "./utils";
 import mongoose from 'mongoose';
 
-export const getLinks = async () => {
+export const getUserLinks = async () => {
     try {
         await connectToDb();
-        const links = await Link.find();
-        return links;
+        const userLinks = await UserLink.find();
+        return userLinks;
     } catch (error) {
         console.log(error);
-        throw new Error("Failed to fetch links");
+        throw new Error("Failed to fetch userLinks");
     }
 };
 
-export const getLink = async (id: string | mongoose.Types.ObjectId) => {
+export const getUserLink = async (id: string | mongoose.Types.ObjectId) => {
     try {
         await connectToDb();
-        const link = await Link.findById(id);
-        return link;
+        const userLink = await UserLink.findById(id);
+        return userLink;
     } catch (error) {
         console.log(error);
-        throw new Error("Failed to fetch link");
+        throw new Error("Failed to fetch userLink");
     }
 };
 
