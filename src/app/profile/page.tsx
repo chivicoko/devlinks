@@ -74,10 +74,10 @@ const Links: React.FC = () => {
               <p className="my-4 text-gray-500 text-[16px]">Add your details to create a personal touch to your profile.</p>
               
               <div className="w-full flex justify-start flex-col gap-5">
-                <div className="bg-[#FAFAFA] rounded-lg flex justify-between items-center p-[20px] text-center text-[#737373] relative">
+                <div className="bg-[#FAFAFA] rounded-lg flex justify-between items-start gap-4 md:gap-0 flex-col md:flex-row md:items-center p-[20px] text-center text-[#737373] relative">
                   <p className="text-base">Profile picture</p>
-                  <div className='flex justify-center items-center'>
-                    <button className="items-center relative w-[249.53px] h-[160px] hover:cursor-pointer">
+                  <div className='flex justify-start md:justify-center items-start gap-4 md:gap-0 flex-col md:flex-row md:items-center'>
+                    <button className="relative w-[193px] h-[193px] md:w-[249.53px] md:h-[160px] flex justify-start hover:cursor-pointer">
                       <Image
                         src="/images/Frame 14.png" 
                         alt="preview section"
@@ -90,9 +90,9 @@ const Links: React.FC = () => {
                 </div>
                 <div className="bg-[#FAFAFA] rounded-lg flex justify-between items-center p-[20px] text-base text-center text-[#737373] relative">
                   <form className='w-full flex justify-between items-center flex-col gap-[12px]'>
-                    <div className="inputContainer w-full flex justify-between items-center">
+                    <div className="inputContainer w-full flex justify-between items-start flex-col md:flex-row md:items-center">
                       <label htmlFor="firstName" className='flex-1 text-start'>First name*</label>
-                      <div className={`flex-[1.5] px-4 flex items-center border bg-white rounded-lg ${errors.firstName ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
+                      <div className={`flex-[1.5] w-full px-4 flex items-center border bg-white rounded-lg ${errors.firstName ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
                         <input
                           className="w-full py-[12px] border-none outline-0 text-base text-gray-700 leading-tight"
                           id="firstName"
@@ -104,9 +104,9 @@ const Links: React.FC = () => {
                         {errors.firstName && <span className="text-xs text-red-500 w-[180px] flex justify-end">{errors.firstName}</span>}
                       </div>
                     </div>
-                    <div className="inputContainer w-full flex justify-between items-center">
+                    <div className="inputContainer w-full flex justify-between items-start flex-col md:flex-row md:items-center">
                       <label htmlFor="lastName" className='flex-1 text-start'>Last name*</label>
-                      <div className={`flex-[1.5] px-4 flex items-center border bg-white rounded-lg ${errors.lastName ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
+                      <div className={`flex-[1.5] w-full px-4 flex items-center border bg-white rounded-lg ${errors.lastName ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
                         <input
                           className="w-full py-[12px] border-none outline-0 text-base text-gray-700 leading-tight"
                           id="lastName"
@@ -118,9 +118,9 @@ const Links: React.FC = () => {
                         {errors.lastName && <span className="text-xs text-red-500 w-[180px] flex justify-end">{errors.lastName}</span>}
                       </div>
                     </div>
-                    <div className="inputContainer w-full flex justify-between items-center">
+                    <div className="inputContainer w-full flex justify-between items-start flex-col md:flex-row md:items-center">
                       <label htmlFor="email" className='flex-1 text-start'>Email</label>
-                      <div className={`flex-[1.5] px-4 flex items-center border bg-white rounded-lg ${errors.email ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
+                      <div className={`flex-[1.5] w-full px-4 flex items-center border bg-white rounded-lg ${errors.email ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
                         <input
                           className="w-full py-[12px] border-none outline-0 text-base text-gray-700 leading-tight"
                           id="email"

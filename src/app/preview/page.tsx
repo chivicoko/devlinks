@@ -8,8 +8,8 @@ const Preview = () => {
   return (
     <main className='relative min-h-screen'>
       <div className='md:bg-[#633CFF] p-4 md:p-6 rounded-b-[32px] h-[357px] flex items-start justify-center'>
-        <div className='flex items-center justify-between md:p-4 bg-white rounded-lg md:shadow-md w-full'>
-          <Link href='/editor' className='bg-white rounded-lg text-[#633CFF] py-[11px] px-[27px] border border-[#633CFF] hover:bg-[#EFEBFF] hover:cursor-pointer'>
+        <div className='flex items-center justify-between md:bg-white md:p-4 rounded-lg md:shadow-md w-full'>
+          <Link href='/editor' className='bg-transparent md:bg-white rounded-lg text-[#633CFF] py-[11px] px-[27px] border border-[#633CFF] hover:bg-[#EFEBFF] hover:cursor-pointer'>
             Back to Editor
           </Link>
           <Link href='/' className='bg-[#633CFF] rounded-lg text-white py-[11px] px-[27px] border border-[#633CFF]'>
