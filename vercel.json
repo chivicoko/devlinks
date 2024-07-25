@@ -1,28 +1,31 @@
 {
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/next"
+      }
+    ],
     "routes": [
       {
-        "src": "/",
-        "dest": "/page"
+        "src": "/_next/(.*)",
+        "dest": "/_next/$1"
       },
       {
-        "src": "/login",
-        "dest": "/login/page"
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
       },
       {
-        "src": "/register",
-        "dest": "/register/page"
+        "src": "/favicon.ico",
+        "dest": "/favicon.ico"
       },
       {
-        "src": "/links",
-        "dest": "/links/page"
+        "src": "/manifest.json",
+        "dest": "/manifest.json"
       },
       {
-        "src": "/preview",
-        "dest": "/preview/page"
-      },
-      {
-        "src": "/profile",
-        "dest": "/profile/page"
+        "src": "/(.*)",
+        "dest": "/$1"
       }
     ]
   }
