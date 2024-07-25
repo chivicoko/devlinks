@@ -1,24 +1,29 @@
 {
     "routes": [
-        {
-            "src": "/",
-            "dest": "/"
-        },
-        {
-            "src": "/login",
-            "dest": "/login"
-        },
-        {
-            "src": "/links",
-            "dest": "/links"
-        },
-        {
-            "src": "/preview",
-            "dest": "/preview"
-        },
-        {
-            "src": "/profile",
-            "dest": "/profile"
-        }
+      {
+        "src": "/",
+        "dest": "/page"
+      },
+      {
+        "src": "/login",
+        "dest": "/login/page"
+      },
+      {
+        "src": "/register",
+        "dest": "/register/page"
+      },
+      {
+        "src": "/links",
+        "dest": "/links/page"
+      },
+      {
+        "src": "/preview",
+        "dest": "/preview/page"
+      },
+      {
+        "src": "/profile",
+        "dest": "/profile/page"
+      }
     ]
-}
+  }
+  
