@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <Head/>
       <body className={inter.className}>
-        <ToastContainer style={{width: 'fit-content', left: '50%', transform: "translateX(-50%)"}} />
+        <ToastContainer />
         {children}
       </body>
     </html>

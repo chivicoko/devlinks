@@ -21,6 +21,30 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--foreground-rgb)); /* Solid white background */
 }
+/* Global styles */
+.Toastify__toast-container {
+  width: fit-content !important;
+  left: 50% !important;
+  bottom: 20px !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .Toastify__toast-container {
+    width: 80% !important;            /* Increase width on mobile */
+    max-width: 100% !important;      /* Ensure it can be full-width on small screens */
+    font-size: 12px !important;
+  }
+
+  .Toastify__toast-body {
+    font-size: 12px !important;
+  }
+
+  /* .Toastify__toast-body span {
+    font-size: 13px !important;
+  } */
+}
 
 @layer utilities {
   .text-balance {
