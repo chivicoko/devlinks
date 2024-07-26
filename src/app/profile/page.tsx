@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from '@/components/navbar/Navbar';
+import { showToast } from '@/components/toast/CustomToast';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
@@ -48,11 +49,12 @@ const Links: React.FC = () => {
     if (validateInputs()) {
       // Handle form submission
       console.log('Form is valid');
+      showToast('save', 'Your changes have been successfully changed!');
     } else {
       console.log('Form is invalid');
     }
   };
-
+  
   return (
     <div className=''>
       <Navbar />

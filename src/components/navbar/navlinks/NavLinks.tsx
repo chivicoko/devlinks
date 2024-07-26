@@ -2,7 +2,6 @@ import React from 'react';
 import LinkItem from './linkitem/LinkItem';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LinkOutlinedIcon from '@mui/icons-material/LinkOutlined';
-import LinkIcon from '@mui/icons-material/Link';
 
 
 const navlinks = [
