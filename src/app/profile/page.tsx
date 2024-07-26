@@ -94,9 +94,9 @@ const Links: React.FC = () => {
                   <form className='w-full flex justify-between items-center flex-col gap-[12px]'>
                     <div className="inputContainer w-full flex justify-between items-start flex-col md:flex-row md:items-center">
                       <label htmlFor="firstName" className='flex-1 text-start'>First name*</label>
-                      <div className={`flex-[1.5] w-full px-4 flex items-center border bg-white rounded-lg ${errors.firstName ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
+                      <div className={`flex-[1.5] w-full flex items-center border bg-white rounded-lg ${errors.firstName ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
                         <input
-                          className="w-full py-[12px] border-none outline-0 text-base text-gray-700 leading-tight"
+                          className="w-full py-[12px] px-4 border-none rounded-lg outline-0 text-base text-gray-700 leading-tight"
                           id="firstName"
                           type="text"
                           placeholder='eg. John' 
@@ -108,9 +108,9 @@ const Links: React.FC = () => {
                     </div>
                     <div className="inputContainer w-full flex justify-between items-start flex-col md:flex-row md:items-center">
                       <label htmlFor="lastName" className='flex-1 text-start'>Last name*</label>
-                      <div className={`flex-[1.5] w-full px-4 flex items-center border bg-white rounded-lg ${errors.lastName ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
+                      <div className={`flex-[1.5] w-full flex items-center border bg-white rounded-lg ${errors.lastName ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
                         <input
-                          className="w-full py-[12px] border-none outline-0 text-base text-gray-700 leading-tight"
+                          className="w-full py-[12px] px-4 border-none rounded-lg outline-0 text-base text-gray-700 leading-tight"
                           id="lastName"
                           type="text"
                           placeholder='eg. Appleseed' 
@@ -122,9 +122,9 @@ const Links: React.FC = () => {
                     </div>
                     <div className="inputContainer w-full flex justify-between items-start flex-col md:flex-row md:items-center">
                       <label htmlFor="email" className='flex-1 text-start'>Email</label>
-                      <div className={`flex-[1.5] w-full px-4 flex items-center border bg-white rounded-lg ${errors.email ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
+                      <div className={`flex-[1.5] w-full flex items-center border bg-white rounded-lg ${errors.email ? 'border-red-500' : 'border-gray-300'} focus-within:border-[#633CFF] focus-within:ring-1 focus-within:ring-[#633CFF] focus-within:shadow-[0_0_10px_0_rgba(99,60,255,0.5),0_0_20px_5px_rgba(99,60,255,0.05)]`}>
                         <input
-                          className="w-full py-[12px] border-none outline-0 text-base text-gray-700 leading-tight"
+                          className="w-full py-[12px] px-4 border-none outline-0 rounded-lg text-base text-gray-700 leading-tight"
                           id="email"
                           type="text"
                           value={email}

@@ -122,8 +122,8 @@ const Links: React.FC = () => {
             </div>
           </div>
           <div className="flex-1 lg:flex-[2] bg-white rounded-lg">
-            <div className="p-10 max-h-screen overflow-y-auto hide-scrollbar">
-              <h2 className="text-[32px] font-bold">Customize your links</h2>
+            <div className="p-10 max-h-screen overflow-y-auto custom-scrollbar">
+              <h2 className="text-[24px] md:text-[32px] font-bold">Customize your links</h2>
               <p className="my-4 text-gray-500 text-[16px]">Add/edit/remove links below and then share all your profiles with the world!</p>
               
               <button 
@@ -133,10 +133,10 @@ const Links: React.FC = () => {
                 + Add new link
               </button>
               
-              {!showLinksSection && (
-                <div className="getStarted bg-[#FAFAFA] px-[20px] py-[62.5px] rounded-[12px]">
-                  <div className="flex flex-col items-center px-[100px] text-center relative">
-                    <div className="items-center relative w-[249.53px] h-[160px]">
+              {/* {!showLinksSection && (
+                <div className="getStarted bg-[#FAFAFA] px-[20px] py-[46.5px] md:py-[62.5px] rounded-[12px]">
+                  <div className="flex flex-col items-center md:px-[100px] text-center relative">
+                    <div className="items-center relative w-[124.77px] h-[80px] md:w-[249.53px] md:h-[160px]">
                       <Image
                         src="/images/Group 273.png" 
                         alt="preview section"
@@ -144,7 +144,24 @@ const Links: React.FC = () => {
                         objectFit="contain" 
                       />
                     </div>
-                    <h2 className="text-[32px] font-bold mt-8">Let’s get you started</h2>
+                    <h2 className="text-[24px] md:text-[32px] font-bold mt-8">Let’s get you started</h2>
+                    <p className="my-4 text-gray-500 text-base p-2">Use the “Add new link” button to get started. Once you have more than one link, you can reorder and edit them. We’re here to help you share your profiles with everyone!</p>
+                  </div>
+                </div>
+              )} */}
+              
+              {links.length === 0 && (
+                <div className="getStarted bg-[#FAFAFA] px-[20px] py-[46.5px] md:py-[62.5px] rounded-[12px]">
+                  <div className="flex flex-col items-center md:px-[100px] text-center relative">
+                    <div className="items-center relative w-[124.77px] h-[80px] md:w-[249.53px] md:h-[160px]">
+                      <Image
+                        src="/images/Group 273.png" 
+                        alt="preview section"
+                        layout="fill" 
+                        objectFit="contain" 
+                      />
+                    </div>
+                    <h2 className="text-[24px] md:text-[32px] font-bold mt-8">Let’s get you started</h2>
                     <p className="my-4 text-gray-500 text-base p-2">Use the “Add new link” button to get started. Once you have more than one link, you can reorder and edit them. We’re here to help you share your profiles with everyone!</p>
                   </div>
                 </div>
@@ -192,7 +209,7 @@ const Links: React.FC = () => {
                               }),
                               option: (base, { isFocused }) => ({
                                 ...base,
-                                backgroundColor: isFocused ? '#EFEBFF' : 'white',
+                                backgroundColor: isFocused ? 'white' : 'white',
                                 color: isFocused ? '#633CFF' : '#333',
                               }),
                               singleValue: (base) => ({
